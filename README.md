@@ -11,11 +11,12 @@ The UI available at: https://<hostname>/swagger
 
 ### To do list
 1. Create endpoints for CRUD of Todo item
-2. Authentication\Authorization
-3. Swagger
-4. Persistance
-5. Monitoring
-6. Create a docker file
-7. Testing
-8. CI\CD
-9. Deployment
+2. Logging to openTelemetry
+3. Authentication\Authorization
+4. Swagger
+5. Persistance
+6. Monitoring
+7. Create a docker file
+8. Testing
+9. CI\CD
+10. Deployment

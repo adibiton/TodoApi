@@ -1,5 +1,12 @@
+using TodoApi.Tracing;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Create tracer
+builder.Configuration
+    .GetSection("Tracer")
+    .Bind(builder.Services.AddOptions<TracerConfigurationParameters>());
+builder.Services.AddSingleton<TracerFactory, ConsoleTracerFactory>();
 // Add services to the container.
 
 builder.Services.AddControllers();
