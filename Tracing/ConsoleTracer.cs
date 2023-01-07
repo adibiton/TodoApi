@@ -12,12 +12,12 @@ namespace TodoApi.Tracing
 
         public void Log(string message)
         {
-            Console.WriteLine($"{Environment} - {message}");
+            Console.WriteLine($"[{Environment}] - {message}");
         }
 
         public void Error(string message)
         {
-            Console.WriteLine($"{Error} - {message}");
+            Console.WriteLine($"[{Error}] - {message}");
         }
     }
 }
